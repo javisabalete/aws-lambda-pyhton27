@@ -1,0 +1,10 @@
+#!/bin/bash
+
+pip install -r $PROJ_PATH/requeriments.txt
+
+zip -9 proj.zip *.py
+
+cd $VIRTUAL_ENV/lib/python2.7/site-packages
+zip -r9 $PROJ_PATH/proj.zip *
+cd $VIRTUAL_ENV/lib64/python2.7/site-packages
+zip -r9 $PROJ_PATH/proj.zip *

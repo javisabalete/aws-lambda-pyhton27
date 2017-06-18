@@ -13,10 +13,9 @@ Run and build your aws lambda applications written in python.
     docker-compose up --build
     ```
 
-On finish, your project will have been packaged in ``proj.zip```, ready to upload in aws lambda.
+On finish, your project will have been packaged in ```proj.zip```, ready to upload in aws lambda.
 
-##Execute command on the container
+## Execute command on the container
 
-    ```bash
     docker run --rm -v $(pwd):/root/proj --env-file=.env $(docker build -q .) HERE_YOUR_COMMAND
-    ```
+  
